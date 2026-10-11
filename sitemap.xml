@@ -6,12 +6,4 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- 在这里继续添加其他页面，例如：
-  <url>
-    <loc>https://sinogrand.net/about.html</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
 </urlset>
