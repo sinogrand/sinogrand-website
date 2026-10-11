@@ -7,7 +7,7 @@ body{color:var(--dark);line-height:1.6;}
 header{background:#fff;box-shadow:0 2px 8px #00000015;position:sticky;top:0;z-index:99;}
 .header-wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
 .logo img{height:70px;}
-nav ul{display:flex;gap:30px;list-style:none;}
+nav ul{display:flex;gap:42px;list-style:none;}
 nav a{text-decoration:none;color:#222;font-weight:500;transition:0.3s;}
 nav a:hover{color:var(--main-red);}
 .lang-switch button{border:none;background:transparent;font-size:15px;padding:4px 8px;cursor:pointer;margin-left:4px;}
