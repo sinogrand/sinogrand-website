@@ -1,0 +1,37 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, "Noto Sans SC", sans-serif;}
+:root{--main-red:#c8102e;--dark:#222;--light:#f8f8f8;--gray:#666;}
+body{color:var(--dark);line-height:1.6;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+
+/* Header导航栏 */
+header{background:#fff;box-shadow:0 2px 8px #00000015;position:sticky;top:0;z-index:99;}
+.header-wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
+.logo img{height:70px;}
+nav ul{display:flex;gap:30px;list-style:none;}
+nav a{text-decoration:none;color:#222;font-weight:500;transition:0.3s;}
+nav a:hover{color:var(--main-red);}
+.lang-switch button{border:none;background:transparent;font-size:15px;padding:4px 8px;cursor:pointer;margin-left:4px;}
+.lang-switch button.active{background:var(--main-red);color:white;border-radius:4px;}
+
+/* Banner首页大图区 */
+.banner{background:#1b222b;color:white;padding:120px 0;}
+.banner .container h1[data-i18n="bannerTitle"]{font-size:42px;margin-bottom:18px;}
+.banner .container p[data-i18n="bannerSub"]{font-size:18px;max-width:750px;margin-bottom:30px;opacity:0.9;}
+.btn{display:inline-block;background:var(--main-red);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
+
+/* 优势卡片板块 */
+.features{padding:80px 0;background:#fff;}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;}
+.feature-card{border:1px solid #eee;padding:30px;border-radius:8px;text-align:center;}
+.feature-card h3[data-i18n^="feature"]{color:var(--main-red);margin-bottom:12px;font-size:20px;}
+
+/* 底部Footer */
+footer{background:#1b222b;color:#fff;padding:40px 0;margin-top:60px;font-size:14px;}
+
+/* 移动端适配 */
+@media(max-width:768px){
+  .header-wrap{flex-wrap:wrap;}
+  nav ul{gap:16px;margin:10px 0;}
+  .features-grid{grid-template-columns:repeat(2,1fr);}
+  .banner .container h1[data-i18n="bannerTitle"]{font-size:28px;}
+}
